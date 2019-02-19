@@ -1,18 +1,18 @@
-ESPREMOTE: ESP8266 Remote Control Adapter
-=========================================
+ESPRELAYS: ESP8266 Reed Relay Board
+====================================
 
 Copyright 2017-2018 SuperHouse Automation Pty Ltd  www.superhouse.tv  
 
-Allows an RF remote control to be connected to an ESP8266 so that it
+Allows an appliance remote control to be connected to an ESP8266 so that it
 can be triggered remotely as if the buttons were pushed.
 
 Features:
 
  * ESP8266 MCU with wifi.
- * 4 low-side switched transistor outputs.
+ * 6 dry-contact reed relay outputs.
  * Headers for GND and 3.3V to power the remote control.
- * 2.1mm DC jack for 5-24Vdc power input.
- * Efficient 3.3V switchmode power supply.
+ * 2.1mm DC jack for 7-24Vdc power input.
+ * Efficient 5V switchmode power supply with 3.3V linear regulator.
 
 Note: Images below are for old v1.0 release. Images need updating.
 
@@ -22,7 +22,7 @@ Note: Images below are for old v1.0 release. Images need updating.
 
 More information is available at:
 
-  http://www.superhouse.tv/espremote
+  http://www.superhouse.tv/esprelays
 
 
 INSTALLATION
