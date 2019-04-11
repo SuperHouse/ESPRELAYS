@@ -1,7 +1,7 @@
 ESPRELAYS: ESP8266 Reed Relay Board
 ====================================
 
-Copyright 2017-2018 SuperHouse Automation Pty Ltd  www.superhouse.tv  
+Copyright 2017-2019 SuperHouse Automation Pty Ltd  www.superhouse.tv  
 
 Allows an appliance remote control to be connected to an ESP8266 so that it
 can be triggered remotely as if the buttons were pushed.
@@ -10,15 +10,9 @@ Features:
 
  * ESP8266 MCU with wifi.
  * 6 dry-contact reed relay outputs.
- * Headers for GND and 3.3V to power the remote control.
+ * Headers for GND, 3.3V, and 5V to power the remote control.
  * 2.1mm DC jack for 7-24Vdc power input.
  * Efficient 5V switchmode power supply with 3.3V linear regulator.
-
-Note: Images below are for old v1.0 release. Images need updating.
-
-![Oblique view](https://raw.githubusercontent.com/SuperHouse/ESPREMOTE/master/images/ESPREMOTE-v1_0-oblique.jpg)
-
-![Bottom view](https://raw.githubusercontent.com/SuperHouse/ESPREMOTE/master/images/ESPREMOTE-v1_0-bottom.jpg)
 
 More information is available at:
 
