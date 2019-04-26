@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -6258,25 +6258,27 @@ reed, 1 x norm. open with polarity, grid 5.08</description>
 <text x="10.16" y="116.84" size="2.1844" layer="97" font="vector" ratio="15">ESP-12 Module (ESP8266)</text>
 <text x="124.46" y="175.26" size="2.1844" layer="97" font="vector" ratio="15">3.3V FTDI Header</text>
 <text x="7.62" y="149.86" size="1.778" layer="97" font="vector" ratio="10">5-24Vdc input</text>
-<text x="7.62" y="20.32" size="1.778" layer="97" font="vector" ratio="10">Output 1: GPIO12
+<text x="7.62" y="19.05" size="1.778" layer="97" font="vector" ratio="10">Output 1: GPIO12
 Output 2: GPIO13
 Output 3: GPIO14
-Output 4: GPIO5
-Output 5: GPIO16
-Output 6: GPIO15</text>
+Output 4: GPIO4
+Output 5: GPIO5
+Output 6: GPIO15
+Note: GPIO16 pulses high on startup
+because it's tied to RESET internally
+on some ESP-12 modules</text>
 <text x="20.32" y="48.26" size="1.778" layer="97">Output 1</text>
 <text x="20.32" y="45.72" size="1.778" layer="97">Output 2</text>
 <text x="20.32" y="50.8" size="1.778" layer="97">Output 3</text>
-<text x="71.12" y="55.88" size="1.778" layer="97">Output 4</text>
+<text x="71.12" y="53.34" size="1.778" layer="97">Output 4</text>
 <text x="187.96" y="81.28" size="5.08" layer="94" ratio="12">5</text>
 <text x="187.96" y="38.1" size="5.08" layer="94" ratio="12">6</text>
-<text x="20.32" y="53.34" size="1.778" layer="97">Output 5</text>
+<text x="71.12" y="55.88" size="1.778" layer="97">Output 5</text>
 <text x="71.12" y="45.72" size="1.778" layer="97">Output 6</text>
 <wire x1="96.52" y1="20.32" x2="96.52" y2="121.92" width="0.254" layer="97" style="longdash"/>
 <wire x1="96.52" y1="93.98" x2="160.02" y2="93.98" width="0.254" layer="97" style="longdash"/>
 <wire x1="160.02" y1="93.98" x2="160.02" y2="121.92" width="0.254" layer="97" style="longdash"/>
 <text x="99.06" y="116.84" size="2.1844" layer="97" font="vector" ratio="15">Tx Power</text>
-<text x="167.64" y="10.16" size="1.778" layer="97">Do not place</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="111.76" y="139.7" smashed="yes">
@@ -6771,10 +6773,10 @@ Output 6: GPIO15</text>
 <label x="83.82" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="119.38" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
-<label x="185.42" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="187.96" y1="76.2" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
+<label x="185.42" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -6782,6 +6784,12 @@ Output 6: GPIO15</text>
 <pinref part="IC1" gate="G$1" pin="GPIO4"/>
 <wire x1="68.58" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <label x="83.82" y="53.34" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="119.38" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
+<label x="185.42" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO14" class="0">
@@ -6861,12 +6869,6 @@ Output 6: GPIO15</text>
 <pinref part="IC1" gate="G$1" pin="GPIO16"/>
 <wire x1="33.02" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
 <label x="15.24" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="187.96" y1="76.2" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
-<label x="185.42" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R19" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="TX" class="0">
