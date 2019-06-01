@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6238,7 +6238,7 @@ reed, 1 x norm. open with polarity, grid 5.08</description>
 <plain>
 <text x="7.62" y="6.858" size="1.778" layer="94">SKU: ESPRELAYS</text>
 <text x="7.62" y="12.7" size="2.794" layer="94">SuperHouse Automation ESP8266 Relays</text>
-<text x="81.28" y="6.858" size="1.778" layer="94">V1.0 (2019-04-11)</text>
+<text x="81.28" y="6.858" size="1.778" layer="94">V1.1 (2019-04-26)</text>
 <text x="35.306" y="6.858" size="1.778" layer="94">www.superhouse.tv/esprelays</text>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="78.74" y1="5.08" x2="109.22" y2="10.16" columns="8" rows="5" layer="94"/>
